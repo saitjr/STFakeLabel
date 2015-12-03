@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="STFakeLabel_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="ANu-B6-Ooc">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EGG" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UCt-VI-hV5">
+                                <rect key="frame" x="122.5" y="264.5" width="75" height="39"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="M3v-Bw-UK5"/>
+                                    <constraint firstAttribute="width" constant="75" id="v0j-OL-BCi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NPm-Uf-0CN">
+                                <rect key="frame" x="140" y="184.5" width="40" height="40"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="NPm-Uf-0CN" secondAttribute="height" multiplier="1:1" id="1QK-Sn-jdv"/>
+                                    <constraint firstAttribute="height" constant="40" id="dL3-Er-uot"/>
+                                </constraints>
+                                <state key="normal" image="arrow-down2"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mkP-NN-6Kl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="12F-eN-CSl">
+                                <rect key="frame" x="237.5" y="264" width="40" height="40"/>
+                                <animations/>
+                                <state key="normal" image="arrow-left2"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qge-Hj-c9a"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yyJ-VH-oHO">
+                                <rect key="frame" x="42.5" y="264" width="40" height="40"/>
+                                <animations/>
+                                <state key="normal" image="arrow-right2"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c2O-JI-3X2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYu-pB-KI1">
+                                <rect key="frame" x="140" y="343.5" width="40" height="40"/>
+                                <animations/>
+                                <state key="normal" image="arrow-up2"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cCi-fi-YSF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NPm-Uf-0CN" firstAttribute="centerX" secondItem="UCt-VI-hV5" secondAttribute="centerX" id="2vy-Xa-J77"/>
+                            <constraint firstAttribute="trailing" secondItem="ANu-B6-Ooc" secondAttribute="trailing" id="7rJ-Za-LrK"/>
+                            <constraint firstItem="eYu-pB-KI1" firstAttribute="top" secondItem="UCt-VI-hV5" secondAttribute="bottom" constant="40" id="Cks-u9-mBG"/>
+                            <constraint firstItem="12F-eN-CSl" firstAttribute="width" secondItem="NPm-Uf-0CN" secondAttribute="width" id="FxA-bn-pxu"/>
+                            <constraint firstItem="yyJ-VH-oHO" firstAttribute="width" secondItem="NPm-Uf-0CN" secondAttribute="width" id="GLE-Es-J4K"/>
+                            <constraint firstItem="12F-eN-CSl" firstAttribute="leading" secondItem="UCt-VI-hV5" secondAttribute="trailing" constant="40" id="L74-Ne-HVK"/>
+                            <constraint firstItem="yyJ-VH-oHO" firstAttribute="centerY" secondItem="UCt-VI-hV5" secondAttribute="centerY" id="SgQ-xp-2mh"/>
+                            <constraint firstItem="eYu-pB-KI1" firstAttribute="width" secondItem="NPm-Uf-0CN" secondAttribute="width" id="WBl-3c-hRf"/>
+                            <constraint firstItem="eYu-pB-KI1" firstAttribute="height" secondItem="NPm-Uf-0CN" secondAttribute="height" id="fla-Kc-6z7"/>
+                            <constraint firstItem="12F-eN-CSl" firstAttribute="centerY" secondItem="UCt-VI-hV5" secondAttribute="centerY" id="hah-jO-F58"/>
+                            <constraint firstItem="yyJ-VH-oHO" firstAttribute="height" secondItem="NPm-Uf-0CN" secondAttribute="height" id="hd4-7p-wsP"/>
+                            <constraint firstItem="UCt-VI-hV5" firstAttribute="top" secondItem="NPm-Uf-0CN" secondAttribute="bottom" constant="40" id="hn6-vE-lZH"/>
+                            <constraint firstItem="ANu-B6-Ooc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="jW1-y8-rOT"/>
+                            <constraint firstItem="eYu-pB-KI1" firstAttribute="centerX" secondItem="UCt-VI-hV5" secondAttribute="centerX" id="jmZ-h5-Swa"/>
+                            <constraint firstItem="UCt-VI-hV5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lJ1-Sf-KuA"/>
+                            <constraint firstItem="ANu-B6-Ooc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="nud-Nl-2W8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ANu-B6-Ooc" secondAttribute="bottom" id="qD8-wc-sFL"/>
+                            <constraint firstItem="UCt-VI-hV5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wEm-jC-Rnh"/>
+                            <constraint firstItem="UCt-VI-hV5" firstAttribute="leading" secondItem="yyJ-VH-oHO" secondAttribute="trailing" constant="40" id="xm5-tI-qxr"/>
+                            <constraint firstItem="12F-eN-CSl" firstAttribute="height" secondItem="NPm-Uf-0CN" secondAttribute="height" id="yBH-Ru-CgB"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="fakeLabel" destination="UCt-VI-hV5" id="a02-IY-bHs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="421" y="398"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow-down2" width="64" height="64"/>
+        <image name="arrow-left2" width="64" height="64"/>
+        <image name="arrow-right2" width="64" height="64"/>
+        <image name="arrow-up2" width="64" height="64"/>
+        <image name="background" width="240" height="400"/>
+    </resources>
+</document>

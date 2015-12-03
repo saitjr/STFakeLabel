@@ -28,7 +28,6 @@ static void * STFakeLabelAnimationIsAnimatingKey = &STFakeLabelAnimationIsAnimat
     }
     self.st_isAnimating = YES;
     UILabel *fakeLabel = [UILabel new];
-    fakeLabel.text = self.text;
     fakeLabel.frame = self.frame;
     fakeLabel.textAlignment = self.textAlignment;
     fakeLabel.font = self.font;
