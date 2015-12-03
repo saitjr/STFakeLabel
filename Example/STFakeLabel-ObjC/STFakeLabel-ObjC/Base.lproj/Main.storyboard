@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="RAp-ao-FS6">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EGG" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DMk-OE-Qvt">
+                                <rect key="frame" x="123" y="265" width="74.5" height="38.5"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="Vog-5N-WQj"/>
+                                    <constraint firstAttribute="width" constant="75" id="aCq-Vy-Ush"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uof-sU-oFq">
+                                <rect key="frame" x="140" y="343.5" width="40" height="40"/>
+                                <animations/>
+                                <state key="normal" image="arrow-up2"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="23Z-qm-qnG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BU9-Yg-ML4">
+                                <rect key="frame" x="43" y="265" width="40" height="40"/>
+                                <animations/>
+                                <state key="normal" image="arrow-right2"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b3J-ab-KiB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UDR-vN-RAw">
+                                <rect key="frame" x="237.5" y="265" width="40" height="40"/>
+                                <animations/>
+                                <state key="normal" image="arrow-left2"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rAw-oF-X35"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3iw-hw-bAr">
+                                <rect key="frame" x="140.5" y="185" width="40" height="40"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="QGT-Tb-4aZ"/>
+                                    <constraint firstAttribute="width" secondItem="3iw-hw-bAr" secondAttribute="height" multiplier="1:1" id="oB5-Ia-a6P"/>
+                                </constraints>
+                                <state key="normal" image="arrow-down2"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lYx-Ok-VBl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uof-sU-oFq" firstAttribute="top" secondItem="DMk-OE-Qvt" secondAttribute="bottom" constant="40" id="9ie-LI-FeL"/>
+                            <constraint firstItem="UDR-vN-RAw" firstAttribute="height" secondItem="3iw-hw-bAr" secondAttribute="height" id="BeM-0O-R2I"/>
+                            <constraint firstItem="3iw-hw-bAr" firstAttribute="centerX" secondItem="DMk-OE-Qvt" secondAttribute="centerX" id="Buv-Mh-v73"/>
+                            <constraint firstItem="UDR-vN-RAw" firstAttribute="width" secondItem="3iw-hw-bAr" secondAttribute="width" id="DbC-Wv-7xb"/>
+                            <constraint firstItem="DMk-OE-Qvt" firstAttribute="leading" secondItem="BU9-Yg-ML4" secondAttribute="trailing" constant="40" id="G42-SB-HnR"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="RAp-ao-FS6" secondAttribute="bottom" id="JMw-DZ-c1S"/>
+                            <constraint firstItem="uof-sU-oFq" firstAttribute="height" secondItem="3iw-hw-bAr" secondAttribute="height" id="LNi-TF-HdE"/>
+                            <constraint firstItem="UDR-vN-RAw" firstAttribute="centerY" secondItem="DMk-OE-Qvt" secondAttribute="centerY" id="MYk-rD-2cf"/>
+                            <constraint firstItem="BU9-Yg-ML4" firstAttribute="width" secondItem="3iw-hw-bAr" secondAttribute="width" id="Oy7-K0-Eki"/>
+                            <constraint firstItem="RAp-ao-FS6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="RVd-n1-wx2"/>
+                            <constraint firstItem="uof-sU-oFq" firstAttribute="width" secondItem="3iw-hw-bAr" secondAttribute="width" id="RoY-dJ-q0D"/>
+                            <constraint firstItem="BU9-Yg-ML4" firstAttribute="height" secondItem="3iw-hw-bAr" secondAttribute="height" id="Tl9-Lg-E1d"/>
+                            <constraint firstItem="BU9-Yg-ML4" firstAttribute="centerY" secondItem="DMk-OE-Qvt" secondAttribute="centerY" id="Tv8-hh-Ejf"/>
+                            <constraint firstItem="uof-sU-oFq" firstAttribute="centerX" secondItem="DMk-OE-Qvt" secondAttribute="centerX" id="bDn-mQ-hPS"/>
+                            <constraint firstItem="RAp-ao-FS6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="e3U-JU-l8t"/>
+                            <constraint firstItem="DMk-OE-Qvt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fet-6l-nQf"/>
+                            <constraint firstItem="DMk-OE-Qvt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oXr-6U-Tsi"/>
+                            <constraint firstItem="DMk-OE-Qvt" firstAttribute="top" secondItem="3iw-hw-bAr" secondAttribute="bottom" constant="40" id="rh4-e8-o5g"/>
+                            <constraint firstAttribute="trailing" secondItem="RAp-ao-FS6" secondAttribute="trailing" id="tln-9t-ynU"/>
+                            <constraint firstItem="UDR-vN-RAw" firstAttribute="leading" secondItem="DMk-OE-Qvt" secondAttribute="trailing" constant="40" id="y7l-o1-e81"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="fakeLabel" destination="DMk-OE-Qvt" id="MYg-dW-2fE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="291" y="398"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow-down2" width="32" height="32"/>
+        <image name="arrow-left2" width="32" height="32"/>
+        <image name="arrow-right2" width="32" height="32"/>
+        <image name="arrow-up2" width="32" height="32"/>
+        <image name="background" width="240" height="400"/>
+    </resources>
+</document>
