@@ -36,24 +36,24 @@ import UIKit
 extension UILabel {
     
     enum STFakeAnimationDirection: Int {
-        case STFakeAnimationRight = 1       ///< left to right
-        case STFakeAnimationLeft = -1       ///< right to left
-        case STFakeAnimationDown = -2       ///< up to down
-        case STFakeAnimationUp = 2          ///< down to up
+        case Right = 1       ///< left to right
+        case Left = -1       ///< right to left
+        case Down = -2       ///< up to down
+        case Up = 2          ///< down to up
     }
     
     func st_startAnimation(direction: STFakeAnimationDirection, toText: String!) {
-        if self.st_isAnimatin! {
+        if st_isAnimatin! {
             return
         }
-        self.st_isAnimatin = true
+        st_isAnimatin = true
         
         let fakeLabel = UILabel()
-        fakeLabel.frame = self.frame
+        fakeLabel.frame = frame
         fakeLabel.text = toText
-        fakeLabel.textAlignment = self.textAlignment
-        fakeLabel.textColor = self.textColor
-        fakeLabel.font = self.font
+        fakeLabel.textAlignment = textAlignment
+        fakeLabel.textColor = textColor
+        fakeLabel.font = font
         self.superview!.addSubview(fakeLabel)
         
         var labelOffsetX: CGFloat = 0.0
@@ -61,12 +61,12 @@ extension UILabel {
         var labelScaleX: CGFloat = 0.1
         var labelScaleY: CGFloat = 0.1
         
-        if direction == .STFakeAnimationDown || direction == .STFakeAnimationUp {
-            labelOffsetY = CGFloat(direction.rawValue) * CGRectGetHeight(self.bounds) / 4.0;
+        if direction == .Down || direction == .Up {
+            labelOffsetY = CGFloat(direction.rawValue) * CGRectGetHeight(bounds) / 4.0;
             labelScaleX = 1.0;
         }
-        if direction == .STFakeAnimationLeft || direction == .STFakeAnimationRight {
-            labelOffsetX = CGFloat(direction.rawValue) * CGRectGetWidth(self.bounds) / 2.0;
+        if direction == .Left || direction == .Right {
+            labelOffsetX = CGFloat(direction.rawValue) * CGRectGetWidth(bounds) / 2.0;
             labelScaleY = 1.0;
         }
         fakeLabel.transform = CGAffineTransformConcat(CGAffineTransformMakeScale(labelScaleX, labelScaleY), CGAffineTransformMakeTranslation(labelOffsetX, labelOffsetY))
