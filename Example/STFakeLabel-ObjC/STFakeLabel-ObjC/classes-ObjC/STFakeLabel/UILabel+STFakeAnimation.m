@@ -44,8 +44,8 @@ static void * STFakeLabelAnimationIsAnimatingKey = &STFakeLabelAnimationIsAnimat
     fakeLabel.backgroundColor = self.backgroundColor;
     [self.superview addSubview:fakeLabel];
     
-    CGFloat labelOffsetX = 0; // label make translation offset x
-    CGFloat labelOffsetY = 0; // label make translation offset y
+    CGFloat labelOffsetX = 0.0; // label make translation offset x
+    CGFloat labelOffsetY = 0.0; // label make translation offset y
     CGFloat labelScaleX = 0.1; // label make scale x
     CGFloat labelScaleY = 0.1; // label make scale y
     

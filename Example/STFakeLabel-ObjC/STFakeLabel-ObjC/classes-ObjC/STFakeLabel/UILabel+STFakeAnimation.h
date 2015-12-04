@@ -15,6 +15,7 @@ typedef NS_ENUM(NSInteger, STFakeAnimationDirection) {
     STFakeAnimationUp = 2           ///< down to up
 };
 
+// animation duration
 static const NSTimeInterval STFakeLabelAnimationDuration = 0.7;
 
 @interface UILabel (STFakeAnimation)
