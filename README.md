@@ -6,7 +6,7 @@ STFakeLabel is not real 3D transform.
 
 **Swift** : A extension of `UILabel` , named `STFakeAnimation.swift`.
 
-Do animation just one line.
+Animate just need a single line of code.
 
 ## Screenshots
 
