@@ -36,14 +36,14 @@ Animate just need a single line of code.
 ``` swift
 /*
   enum STFakeAnimationDirection: Int {
-	case STFakeAnimationRight = 1       ///< left to right
-	case STFakeAnimationLeft = -1       ///< right to left
-	case STFakeAnimationDown = -2       ///< up to down
-	case STFakeAnimationUp = 2          ///< down to up
+	case Right = 1       ///< left to right
+	case Left = -1       ///< right to left
+	case Down = -2       ///< up to down
+	case Up = 2          ///< down to up
   }
 */
 
-label.st_startAnimation(UILabel.STFakeAnimationDirection.STFakeAnimationDown, toText: "newText")
+label.st_startAnimation(UILabel.STFakeAnimationDirection.Down, toText: "newText")
 ```
 
 ## MIT Lincense

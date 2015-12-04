@@ -36,10 +36,10 @@ import UIKit
 extension UILabel {
     
     enum STFakeAnimationDirection: Int {
-        case STFakeAnimationRight = 1       ///< left to right
-        case STFakeAnimationLeft = -1       ///< right to left
-        case STFakeAnimationDown = -2       ///< up to down
-        case STFakeAnimationUp = 2          ///< down to up
+        case Right = 1       ///< left to right
+        case Left = -1       ///< right to left
+        case Down = -2       ///< up to down
+        case Up = 2          ///< down to up
     }
     
     func st_startAnimation(direction: STFakeAnimationDirection, toText: String!) {
@@ -61,11 +61,11 @@ extension UILabel {
         var labelScaleX: CGFloat = 0.1
         var labelScaleY: CGFloat = 0.1
         
-        if direction == .STFakeAnimationDown || direction == .STFakeAnimationUp {
+        if direction == .Down || direction == .Up {
             labelOffsetY = CGFloat(direction.rawValue) * CGRectGetHeight(self.bounds) / 4.0;
             labelScaleX = 1.0;
         }
-        if direction == .STFakeAnimationLeft || direction == .STFakeAnimationRight {
+        if direction == .Left || direction == .Right {
             labelOffsetX = CGFloat(direction.rawValue) * CGRectGetWidth(self.bounds) / 2.0;
             labelScaleY = 1.0;
         }
