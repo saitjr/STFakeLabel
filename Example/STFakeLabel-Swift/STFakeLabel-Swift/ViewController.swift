@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     @IBAction func buttonTapped(sender: UIButton) {
         let tag = sender.tag
         let toText = flag % 2 == 1 ? "EGG" : "FALL"
-        self.flag++
+        flag++
         
         if tag == 100 {
             self.fakeLabel.st_startAnimation(UILabel.STFakeAnimationDirection.Down, toText: toText)

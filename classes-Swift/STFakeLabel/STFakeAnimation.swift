@@ -43,17 +43,17 @@ extension UILabel {
     }
     
     func st_startAnimation(direction: STFakeAnimationDirection, toText: String!) {
-        if self.st_isAnimatin! {
+        if st_isAnimatin! {
             return
         }
-        self.st_isAnimatin = true
+        st_isAnimatin = true
         
         let fakeLabel = UILabel()
-        fakeLabel.frame = self.frame
+        fakeLabel.frame = frame
         fakeLabel.text = toText
-        fakeLabel.textAlignment = self.textAlignment
-        fakeLabel.textColor = self.textColor
-        fakeLabel.font = self.font
+        fakeLabel.textAlignment = textAlignment
+        fakeLabel.textColor = textColor
+        fakeLabel.font = font
         self.superview!.addSubview(fakeLabel)
         
         var labelOffsetX: CGFloat = 0.0
