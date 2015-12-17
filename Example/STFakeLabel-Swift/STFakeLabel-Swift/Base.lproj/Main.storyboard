@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
@@ -20,11 +20,9 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="ANu-B6-Ooc">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <animations/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EGG" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UCt-VI-hV5">
                                 <rect key="frame" x="122.5" y="264.5" width="75" height="39"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="39" id="M3v-Bw-UK5"/>
                                     <constraint firstAttribute="width" constant="75" id="v0j-OL-BCi"/>
@@ -35,7 +33,6 @@
                             </label>
                             <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NPm-Uf-0CN">
                                 <rect key="frame" x="140" y="184.5" width="40" height="40"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="NPm-Uf-0CN" secondAttribute="height" multiplier="1:1" id="1QK-Sn-jdv"/>
                                     <constraint firstAttribute="height" constant="40" id="dL3-Er-uot"/>
@@ -47,7 +44,6 @@
                             </button>
                             <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="12F-eN-CSl">
                                 <rect key="frame" x="237.5" y="264" width="40" height="40"/>
-                                <animations/>
                                 <state key="normal" image="arrow-left2"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qge-Hj-c9a"/>
@@ -55,7 +51,6 @@
                             </button>
                             <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yyJ-VH-oHO">
                                 <rect key="frame" x="42.5" y="264" width="40" height="40"/>
-                                <animations/>
                                 <state key="normal" image="arrow-right2"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c2O-JI-3X2"/>
@@ -63,14 +58,12 @@
                             </button>
                             <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYu-pB-KI1">
                                 <rect key="frame" x="140" y="343.5" width="40" height="40"/>
-                                <animations/>
                                 <state key="normal" image="arrow-up2"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cCi-fi-YSF"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="NPm-Uf-0CN" firstAttribute="centerX" secondItem="UCt-VI-hV5" secondAttribute="centerX" id="2vy-Xa-J77"/>

@@ -54,6 +54,7 @@ extension UILabel {
         fakeLabel.textAlignment = textAlignment
         fakeLabel.textColor = textColor
         fakeLabel.font = font
+        fakeLabel.backgroundColor = backgroundColor != nil ? backgroundColor : UIColor.clearColor()
         self.superview!.addSubview(fakeLabel)
         
         var labelOffsetX: CGFloat = 0.0
