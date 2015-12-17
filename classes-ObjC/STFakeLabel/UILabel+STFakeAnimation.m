@@ -53,7 +53,7 @@ static void * STFakeLabelAnimationIsAnimatingKey = &STFakeLabelAnimationIsAnimat
     fakeLabel.font = self.font;
     fakeLabel.textColor = self.textColor;
     fakeLabel.text = toText;
-    fakeLabel.backgroundColor = self.backgroundColor;
+    fakeLabel.backgroundColor = self.backgroundColor != nil ? self.backgroundColor : [UIColor clearColor];
     [self.superview addSubview:fakeLabel];
     
     CGFloat labelOffsetX = 0.0;
